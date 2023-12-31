@@ -1,0 +1,89 @@
+<html>
+  <head>
+    <title>Calculator</title>
+
+    <link rel="stylesheet" href="styles/10-3i,j-finalcalculator.css">
+  </head>
+    <body>
+
+      <p class="display-calculation"></p>
+
+      <p>
+      <button onclick=" updateCalculation('1');"
+      class="grey-button">1</button>
+      
+      <button onclick ="updateCalculation('2');"
+      class="grey-button">2</button>
+
+      <button onclick ="updateCalculation('3');"
+      class="grey-button">3</button>
+
+      <button onclick = "updateCalculation(' + ');"
+      class="orange-button"
+      >+</button>
+    </p>
+
+    <p>
+      <button onclick ="updateCalculation('4');";
+      class="grey-button">4</button>
+      <button onclick ="updateCalculation('5');"
+      class="grey-button">5</button>
+
+      <button onclick ="updateCalculation('6');"
+      class="grey-button">6</button>
+
+      <button onclick = "updateCalculation(' -');"
+      class="orange-button">-</button>
+    </p>
+
+    <p>
+      <button onclick ="updateCalculation('7');"
+      class="grey-button">7</button>
+      
+
+      <button onclick ="updateCalculation('8');"
+      class="grey-button";>8</button>
+
+      <button onclick ="updateCalculation('9');"
+      class="grey-button">9</button>
+
+      <button onclick = "updateCalculation(' * ');"
+      class="orange-button">*</button>
+    
+    </p>
+
+    <p>
+      <button onclick ="updateCalculation('0');"
+      class="grey-button">0</button>
+      
+
+      <button onclick ="updateCalculation(' . ')"
+      class="grey-button">.</button>
+
+      <button onclick="calculation = eval(calculation); console.log(calculation);
+      localStorage.setItem('calculation',calculation);
+       // here too save" class="grey-button">=</button>
+      <!--eval(..)converts the calculation into actual math-->
+
+      <button onclick = "updateCalculation(' /  ')"
+      class="orange-button">/</button>
+
+    </p>
+
+    <p>
+    <button onclick =" calculation= '';
+    console.log(calculation);
+    localStorage.setItem('calculation',calculation);//remember to  save here"
+    class="grey-button">clear</button>
+  </p>
+
+
+  <h1 style="color: white;">Results in console</h1>
+
+      <script src="scripts/10-3i,j-finalcalculator.js">
+
+  </script>
+
+    </body>
+ 
+</html>

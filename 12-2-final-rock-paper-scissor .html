@@ -1,0 +1,101 @@
+<html>
+    <head>
+    <title>Boolean</title>
+    <link rel="stylesheet" href="styles/12-2css-rock-paper-scissor.css">
+    <!-- 1. <style> is not needed 
+         2. you can do it by not putting in separate folder too but this way it is effective-->
+    </head>
+      <body>
+        <p class="title">Rock Paper Scissor</p>
+
+
+        <p>
+
+          <!-- <button onclick="
+           playGame('rock');"
+           class="move-button js-rock-button" >
+           <img src="images/rock-emoji.png" class="move-icon"></button> -->
+         <!-- img is an void element, src = source -> which file or img to load  -->
+          
+         <!-- using eventlisterner instead of onclick -->
+         <button 
+         class="move-button js-rock-button" >
+         <img src="images/rock-emoji.png" class="move-icon"></button>
+
+
+          <!-- 
+          <button  onclick="
+         playGame('paper');"
+         class="move-button">
+         <img src="images/paper-emoji.png" class="move-icon"></button>  -->
+
+        <!-- using eventlisterner instead of onclick -->
+         <button  
+         class="move-button js-paper-button">
+         <img src="images/paper-emoji.png" class="move-icon"></button> 
+
+         
+         
+         <!-- <button  onclick="
+          playGame('scissors');"
+          class="move-button">
+          <img src="images/scissors-emoji.png" class="move-icon"></button> -->
+
+
+           <!-- using eventlisterner instead of onclick -->
+          <button 
+          class="move-button js-scissors-button">
+          <img src="images/scissors-emoji.png" class="move-icon"></button>
+          
+
+         <p class = "js-result css-result"></p>
+
+         <p class ="js-moves"></p>
+
+         <p class = "js-score css-score"></p>
+
+        
+
+         <!-- <button onclick="
+         playGame('reset'); "
+         class="reset-button">Reset Score</button> -->
+
+           <!-- using eventlisterner instead of onclick -->
+         <button onclick="
+         playGame('reset'); "
+         class="reset-button js-reset-button">Reset Score</button>
+
+
+
+         <!-- <button onclick="autoplay()"
+         class="auto-play-button"
+        >Auto Play</button>
+        </p>  -->
+        
+        
+         <!-- using eventlisterner instead of onclick -->
+        <button 
+         class="auto-play-button js-auto-play-button"
+         >Auto Play</button>
+        </p> 
+
+
+
+          <script src="scripts/12-2js-rock-paper-scissor.js"></script>
+
+           <!--you can do it by not putting in separate folder too but this way it is effective-->
+          <br>
+           <h1><b>Controls</b></h1>
+        <h2>Mouse</h2>
+           <p>Click to select </p>
+
+           <h2>Keyboard</h2>
+           <p>R => Rock </p>
+           <p>P => Paper</p>
+           <p>S => Scissors</p>
+    </body>
+</html>
+
+
+
+
